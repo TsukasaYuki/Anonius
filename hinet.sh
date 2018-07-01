@@ -9,6 +9,7 @@ wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.113/linux-headers-3.18.
 wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.113/linux-image-3.18.113-0318113-generic_3.18.113-0318113.201806131532_amd64.deb --no-check-certificate
 dpkg -i --force-hold --force-depends *.deb
 cd ~ ; rm Linux -rf
+apt -y -f install grub2-common
 update-grub
 rm /root/hinet.sh ;dpkg -l|grep linux-image | awk '{print $2}'
 #echo "linux-image-3.12-1-amd64 hold" | dpkg --set-selections
