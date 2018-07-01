@@ -1,6 +1,6 @@
-apt -y -f update
-apt -y -f install aptitude
-apt -y -f remove linux-image-4.9 ; apt -y -f remove linux-image-4.15
+apt -y update
+apt -y install aptitude
+apt -y remove linux-image-4.9 ; apt-y remove linux-image-4.15
 dpkg --get-selections | grep linux-image
 dpkg -P linux-image-4.9.0-3-amd64 linux-image-4.9.0-4-amd64 linux-image-4.9.0-6-amd64 linux-image-4.15.0-23-generic linux-image-4.15.0-20-generic
 mkdir Linux ; cd Linux
