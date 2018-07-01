@@ -7,7 +7,7 @@ apt -y -f --fix-broken install
 mkdir Linux ; cd Linux
 wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.113/linux-headers-3.18.113-0318113-generic_3.18.113-0318113.201806131532_amd64.deb --no-check-certificate
 wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.113/linux-image-3.18.113-0318113-generic_3.18.113-0318113.201806131532_amd64.deb --no-check-certificate
-dpkg -i --force-hold --force-depends *.deb
+dpkg -i *.deb
 cd ~ ; rm Linux -rf
 apt -y -f install grub2-common
 update-grub
