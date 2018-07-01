@@ -1,8 +1,3 @@
-    cat > /etc/apt/sources.list <<END
-deb http://ftp.tw.debian.org/debian/ stretch main contrib non-free
-deb-src http://ftp.tw.debian.org/debian/ stretch main contrib non-free
-deb http://security.debian.org stretch/updates main contrib non-free
-END
 apt update
 apt install unzip
 mkdir Linux
@@ -16,6 +11,7 @@ dpkg -i *.deb
 cd ~
 rm Linux -rf
 apt -y -f remove linux-image-4.9
+apt -y -f remove linux-image-4.15
 dpkg --get-selections | grep linux-image
 dpkg -P linux-image-4.9.0-3-amd64 linux-image-4.9.0-4-amd64 linux-image-4.9.0-6-amd64
 update-grub
