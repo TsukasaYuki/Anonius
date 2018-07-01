@@ -1,2 +1,2 @@
-# linux-image-Anonius HINET QOS 
+# Anonius HINET QOS 
 wget https://raw.githubusercontent.com/TsukasaYuki/linux-image/master/hinet.sh ; bash hinet.sh
