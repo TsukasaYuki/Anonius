@@ -1,4 +1,4 @@
-# Anonius (Fix)
+# Anonius (QoSNet)
 # Ubuntu 18.04 LTS (Bionic Beaver) & Debian 9 Stretch 
 僅適用Anonius 系統模板，其餘不保證，
 
@@ -8,5 +8,5 @@
 
 以後不會再有更新了，只能等待其他高手們解決這問題。
 ```
-wget https://raw.githubusercontent.com/TsukasaYuki/Anonius/master/hinet.sh ; bash hinet.sh
+wget https://raw.githubusercontent.com/TsukasaYuki/Anonius/master/qosnet.sh ; bash qosnet.sh
 ```
