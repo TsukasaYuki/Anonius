@@ -14,5 +14,6 @@ apt -y -f remove linux-image-4.9
 apt -y -f remove linux-image-4.15
 dpkg --get-selections | grep linux-image
 dpkg -P linux-image-4.9.0-3-amd64 linux-image-4.9.0-4-amd64 linux-image-4.9.0-6-amd64
+echo "linux-image-3.12-1-amd64 hold" | dpkg --set-selections
 update-grub
 rm /root/hinet.sh
