@@ -14,4 +14,4 @@ dpkg -P linux-image-4.9.0-3-amd64 linux-image-4.9.0-4-amd64 linux-image-4.9.0-6-
 rm /root/hinet.sh ;dpkg -l|grep linux-image | awk '{print $2}'
 apt -y autoremove
 update-grub
-#echo "linux-image-3.12-1-amd64 hold" | dpkg --set-selections
+echo "linux-image-4.1.52-040152-generic hold" | dpkg --set-selections
