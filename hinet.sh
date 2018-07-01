@@ -1,5 +1,4 @@
 mkdir Linux ; cd Linux
-apt -y --fix-broken install
 wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.52/linux-headers-4.1.52-040152-generic_4.1.52-040152.201805290846_amd64.deb --no-check-certificate
 wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.52/linux-image-4.1.52-040152-generic_4.1.52-040152.201805290846_amd64.deb --no-check-certificate
 dpkg -i --force-hold --force-depends *.deb
