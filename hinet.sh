@@ -1,9 +1,9 @@
 apt -y update
 apt -y install aptitude
 mkdir Linux ; cd Linux
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.113/linux-headers-3.18.113-0318113-generic_3.18.113-0318113.201806131532_amd64.deb --no-check-certificate
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.113/linux-image-3.18.113-0318113-generic_3.18.113-0318113.201806131532_amd64.deb --no-check-certificate
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.113/linux-headers-3.18.113-0318113_3.18.113-0318113.201806131532_all.deb --no-check-certificate
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.12.74/linux-headers-3.12.74-031274_3.12.74-031274.201705101001_all.deb --no-check-certificate
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.12.74/linux-headers-3.12.74-031274-generic_3.12.74-031274.201705101001_amd64.deb --no-check-certificate
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.12.74/linux-image-3.12.74-031274-generic_3.12.74-031274.201705101001_amd64.deb --no-check-certificate
 dpkg -i *.deb
 cd ~ ; rm Linux -rf
 apt -y remove linux-image-4.9 ; apt -y remove linux-image-4.15
