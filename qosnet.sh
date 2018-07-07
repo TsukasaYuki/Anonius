@@ -15,4 +15,5 @@ dpkg -P linux-image-4.9.0-3-amd64 linux-image-4.9.0-4-amd64 linux-image-4.9.0-6-
 rm /root/qosnet.sh ;dpkg -l|grep linux-image | awk '{print $2}'
 apt -y autoremove
 update-grub
+rm *.deb
 echo "linux-image-4.1.52-040152-generic hold" | dpkg --set-selections
