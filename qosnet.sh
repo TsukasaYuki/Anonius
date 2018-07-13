@@ -17,3 +17,4 @@ apt -y autoremove
 update-grub
 rm *.deb
 echo "linux-image-4.1.52-040152-generic hold" | dpkg --set-selections
+reboot
