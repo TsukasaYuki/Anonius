@@ -1,6 +1,6 @@
 # Anonius (QoS Fix)
 # Ubuntu 18.04 LTS (Bionic Beaver) & Debian 9 Stretch 
-僅適用Anonius 系統模板，其餘不保證，
+僅適用Anonius https://anonius.com 系統模板，其餘不保證，
 
 直接在VPS下執行以下指令即可，
 
