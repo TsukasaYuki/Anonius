@@ -1,6 +1,6 @@
 mkdir Linux ; cd Linux
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.52/linux-headers-4.1.52-040152-generic_4.1.52-040152.201805290846_amd64.deb --no-check-certificate
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.1.52/linux-image-4.1.52-040152-generic_4.1.52-040152.201805290846_amd64.deb --no-check-certificate
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.116/linux-headers-3.18.116-0318116-generic_3.18.116-0318116.201807221231_amd64.deb --no-check-certificate
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v3.18.116/linux-image-3.18.116-0318116-generic_3.18.116-0318116.201807221231_amd64.deb --no-check-certificate
 wget http://launchpadlibrarian.net/247729175/module-init-tools_22-1ubuntu4_all.deb
 dpkg -i --force-hold --force-depends *.deb
 cd ~ ; rm Linux -rf
@@ -16,6 +16,6 @@ rm /root/qosnet.sh ;dpkg -l|grep linux-image | awk '{print $2}'
 apt -y autoremove
 update-grub
 rm *.deb
-echo "linux-image-4.1.52-040152-generic hold" | dpkg --set-selections
-apt-mark hold linux-image-4.1.52-040152-generic
+echo "linux-image-3.18.116-0318116-generic hold" | dpkg --set-selections
+apt-mark hold linux-image-3.18.116-0318116-generic
 reboot

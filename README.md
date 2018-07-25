@@ -4,11 +4,11 @@
 
 直接在VPS下執行以下指令即可，
 
-內核會鎖死在4.1.52，因為內核4.4之後皆會被某些ISP特殊照顧，目前尚未查出原因為何
+內核會鎖死在3.18.116，因為內核4.4之後皆會被某些ISP特殊照顧，目前尚未查出原因為何
 
 以後不會再有更新了，理論上其他VPS也可以適用，
 
 但需自行刪除舊內核，完整解決只能等待其他高手們解決這問題。
 ```
-wget https://raw.githubusercontent.com/TsukasaYuki/Anonius/master/qosnet.sh ; bash qosnet.sh
+wget https://raw.githubusercontent.com/TsukasaYuki/Anonius/3.18.116/qosnet.sh ; bash qosnet.sh
 ```
