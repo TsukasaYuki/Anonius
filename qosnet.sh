@@ -16,6 +16,6 @@ rm /root/qosnet.sh ;dpkg -l|grep linux-image | awk '{print $2}'
 apt -y autoremove
 update-grub
 rm *.deb
-echo "linux-headers-3.18.116-0318116-generic hold" | dpkg --set-selections
-apt-mark hold linux-headers-3.18.116-0318116-generic
+echo "linux-image-3.18.116-0318116-generic hold" | dpkg --set-selections
+apt-mark hold linux-image-3.18.116-0318116-generic
 reboot
